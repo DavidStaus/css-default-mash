@@ -3,7 +3,7 @@ The following CSS normalize/reset is a mish mash of Josh W. Comeau's (https://ww
 
 Other styling defaults not included, but that should be thought about (source: https://www.youtube.com/watch?v=Jf0cjocP8Wk)
 
-text length: 60 - 100 characters wide is best for reading and comprehension (74px)
+text length: 60 - 100 characters wide is best for reading and comprehension (74 character ideal) - use css unit 'ch'
 
 Padding around text: At least 15px
 
