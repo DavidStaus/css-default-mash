@@ -21,7 +21,7 @@
   
   body {
     /* 3. Add accessible line-height */
-    line-height: 1.5;
+    line-height: 1.5; /* */
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
   }
@@ -48,6 +48,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+    line-height: calc(1em + 0.5rem); /* *ADDED* More functional line height for headers: see https://www.joshwcomeau.com/css/custom-css-reset/ */
   }
   
   /*
