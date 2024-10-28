@@ -1,4 +1,4 @@
-The following CSS normalize/reset is a mish mash of Josh W. Comeau's (https://www.joshwcomeau.com/css/custom-css-reset/)
+The following CSS normalize/reset is a mish mash of Josh W. Comeau's (https://www.joshwcomeau.com/css/custom-css-reset/), Matt Brictson's (https://mattbrictson.com/blog/css-normalize-and-reset) and sindresorhus' modern-normalise (https://github.com/sindresorhus/modern-normalize).
 
 
 Other styling defaults not included, but that should be thought about (source: https://www.youtube.com/watch?v=Jf0cjocP8Wk)
