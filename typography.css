@@ -1,8 +1,46 @@
+html {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem); 
+    /* letter-spacing: 0.005rem; */
+  }
+
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance
 }
 
 p {
-    max-width: 70ch;
+    max-inline-size: 70ch;
     text-wrap: pretty;
 }
+
+ /* typographic scale to be set based on the font size */
+ /* scale can be set from 30 (0.30) to 45 (0.45) */
+h1 {
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+}
+
+h2 {
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+}
+
+h3 {
+    line-height: calc(1ex / 0.38);
+    margin: calc(1ex / 0.38) 0;
+}
+
+h4 {
+    line-height: calc(1ex / 0.37);
+    margin: calc(1ex / 0.37) 0;
+}
+
+h5 {
+    line-height: calc(1ex / 0.35);
+    margin: calc(1ex / 0.35) 0;
+}
+
+p {
+    line-height: calc(1ex / 0.32);
+    margin: calc(1ex / 0.32) 0;
+}
+
