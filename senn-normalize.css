@@ -45,9 +45,10 @@
   }
   
   /* 8. Improve line wrapping */
-  p {
+  p, li {
     text-wrap: pretty;
   }
+
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     line-height: calc(1em + 0.5rem); /* *ADDED* More functional line height for headers: see https://www.joshwcomeau.com/css/custom-css-reset/ - Can be more specific with typography.css*/
@@ -75,15 +76,9 @@ html {
 		sans-serif,
 		'Apple Color Emoji',
 		'Segoe UI Emoji';
-	/* line-height: 1.15; 1. Correct the line height in all browsers. - COMMENTED OUT BY DAVID SENN (OPINON) Body line-height already set to 1.5*/
 	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
 	tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
 }
-
-/*
-Text-level semantics
-====================
-*/
 
 /**
 Add the correct font weight in Chrome and Safari.
