@@ -9,20 +9,22 @@
 
 */
 
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
+/* 1. Use a more-intuitive box-sizing model - changed to be more concise by Senn*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
   /* 2. Remove default margin */
   * {
     margin: 0;
   }
   
   body {
-    /* 3. Add accessible line-height */
+    /* 3. Add accessible line-height - be more specific in typography.css */
     line-height: 1.5; /* */
-    /* 4. Improve text rendering */
+    /* 4. Improve text rendering in Safari */
     -webkit-font-smoothing: antialiased;
   }
   
@@ -48,39 +50,19 @@
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-    line-height: calc(1em + 0.5rem); /* *ADDED* More functional line height for headers: see https://www.joshwcomeau.com/css/custom-css-reset/ */
+    line-height: calc(1em + 0.5rem); /* *ADDED* More functional line height for headers: see https://www.joshwcomeau.com/css/custom-css-reset/ - Can be more specific with typography.css*/
   }
   
   /*
-    9. Create a root stacking context
+    9. Create a root stacking context for React(#root) and Next.js(#_next)
   */
   #root, #__next {
     isolation: isolate;
   }
 
-  /* ***from Matt Brictson*** */
-  ol[role="list"], ul[role="list"] {
-    list-style: none;
-    padding-inline: 0;
-  }
-
   /* ***From sindresorhus' modern-normalize.css*** */
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
-*,
-::before,
-::after {
-	box-sizing: border-box;
-}
 
 html {
 	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
@@ -97,15 +79,6 @@ html {
 	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
 	tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
 }
-
-/*
-Sections
-========
-*/
-
-/* body {
-	margin: 0; Remove the margin in all browsers.
-} COMMENTED OUT BY DAVID SENN - Margin already set to 0 in *Selector */
 
 /*
 Text-level semantics
